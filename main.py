@@ -18,3 +18,12 @@ regressior.fit(x_train,y_train)
 #predict
 y_pred = regressor.predict(x_test)
 print(y_pred)
+
+#Visualizing the Training set results
+import matplotlib.pyplot as mtp  
+mtp.scatter(x_train, y_train, color="green")   
+mtp.plot(x_train, x_pred, color="red")    
+mtp.title("Salary vs Experience (Training Dataset)")  
+mtp.xlabel("Years of Experience")  
+mtp.ylabel("Salary(In Rupees)")  
+mtp.show()  
